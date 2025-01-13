@@ -6,5 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Phone extends Model
 {
-    //
+    /**
+     * user
+     *
+     * @return void
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
